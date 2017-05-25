@@ -1,7 +1,7 @@
 /*
   The intend of this programs is to show how the banker algorithms working. The function
   start with t and it's name t_function_xx is test function for function_xx. All input should
-  be integer, otherwise the result of the program is undefined.
+  be positive integer, otherwise the result of the program is undefined.
 */
 
 #include <stdio.h>
