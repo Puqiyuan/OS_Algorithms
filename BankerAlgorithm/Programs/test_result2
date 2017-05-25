@@ -1,0 +1,54 @@
+pqy@sda1:~/.../BankerAlgorithm$ gcc banker.c                                                            
+pqy@sda1:~/.../BankerAlgorithm$ ./a.out                                                                 
+Please input the number of kind of source: 3
+Please input the number of source for each kind when system power on
+parting by enter or space, from kind 1 to last kind:
+10 5 7
+Please input the number of processes: 5
+Please input the maximum sources requested for each process each source, one row
+one process, and from left to right is kind 1 source, 2 source, 3 source...
+7 5 3
+3 2 2
+9 0 2
+2 2 2
+4 3 3
+Do you need to initialize sources allocation(y/n)? y
+Please initialize sources amount for each kind source of each process,
+one row one process, and from left to right is kind 1 source, 2 source, 3 source...
+0 1 0 
+3 0 2
+3 0 2
+2 1 1
+0 0 2
+After initialized of allocation:
+For each process how many source it need for each kind:
+Kind:            1 2 3 
+Process 1:       7 4 3 
+Process 2:       0 2 0 
+Process 3:       6 0 0 
+Process 4:       0 1 1 
+Process 5:       4 3 1 
+All available sources: 
+Kind     Available Number
+1        2
+2        3
+3        0
+The sources allocated:
+Kind:            1 2 3 
+Process 1:       0 1 0 
+Process 2:       3 0 2 
+Process 3:       3 0 2 
+Process 4:       2 1 1 
+Process 5:       0 0 2 
+Please select which process you want to assign source(process counting from 1): 5
+Please input the amount of source that you request for process 5
+from left to right is kind 1 source, kind 2 source, kind 3 ...
+3 3 0
+The amount of source that you want to assign to process 5: 
+Kind     Request Amount
+1        3
+2        3
+3        0
+Sorry your request is invalided.
+pqy@sda1:~/.../BankerAlgorithm$ 
+[pqy@sda1:0]  0:ss-local 1:example_data 2:banker.c 3:nano 4:[tmux]         1.18 53% Fri 2017-05-26 00:41 
